@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistracijaActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="150sp"
+                android:layout_marginLeft="35sp"
+                android:layout_marginTop="25sp"
+                android:layout_marginRight="35sp"
+                app:srcCompat="@drawable/parking_logo" />
+
+            <EditText
+                android:id="@+id/inputIme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="35sp"
+                android:layout_marginRight="10sp"
+                android:ems="10"
+                android:hint="Ime"
+                android:inputType="textPersonName"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp" />
+
+            <EditText
+                android:id="@+id/inputPrezime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="10sp"
+                android:ems="10"
+                android:hint="Prezime"
+                android:inputType="textPersonName"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp" />
+
+            <EditText
+                android:id="@+id/inputKorisnickoIme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="10sp"
+                android:ems="10"
+                android:hint="Korisničko ime"
+                android:inputType="textPersonName"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp" />
+
+            <EditText
+                android:id="@+id/inputLozinka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="10sp"
+                android:ems="10"
+                android:hint="Lozinka"
+                android:inputType="textPassword"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp" />
+
+            <EditText
+                android:id="@+id/inputLozinka2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="10sp"
+                android:ems="10"
+                android:hint="Ponovi lozinku"
+                android:inputType="textPassword"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp" />
+
+            <EditText
+                android:id="@+id/inputEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="10sp"
+                android:ems="10"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp" />
+
+            <Button
+                android:id="@+id/buttonRegistracija"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="25sp"
+                android:layout_marginRight="10sp"
+                android:text="Registruj se" />
+
+            <TextView
+                android:id="@+id/labelRegistracijaPoruka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="20sp"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="20sp"
+                android:paddingRight="20sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SviRacuniActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20sp">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="150sp"
+                android:layout_marginLeft="35sp"
+                android:layout_marginTop="25sp"
+                android:layout_marginRight="35sp"
+                app:srcCompat="@drawable/parking_logo" />
+
+            <TextView
+                android:id="@+id/labelDatumOd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35sp"
+                android:layout_marginTop="50sp"
+                android:layout_marginRight="35sp"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10sp"
+                android:paddingTop="5sp"
+                android:paddingRight="10sp"
+                android:paddingBottom="5sp"
+                android:text="Datum od" />
+
+            <DatePicker
+            android:id="@+id/inputDatumOd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"></DatePicker>
+
+            <TextView
+                android:id="@+id/labelDatumDo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="35sp"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10sp"
+                android:paddingTop="5sp"
+                android:paddingRight="10sp"
+                android:paddingBottom="5sp"
+                android:text="Datum do" />
+
+            <DatePicker
+                android:id="@+id/inputDatumDo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"></DatePicker>
+
+            <Button
+                android:id="@+id/buttonPrikaziRacune"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="35sp"
+                android:layout_marginBottom="20sp"
+                android:text="Prikaži račune" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutSviRacuni"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"></LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
